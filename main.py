@@ -1,9 +1,12 @@
+from modules.bot import DiscordBot
+import os
+from dotenv import load_dotenv
 
-nature = 5
-float = 5.5
-double = 5.5555
+
+load_dotenv()
+
+bot = DiscordBot(os.getenv("DISCORD_TOKEN"), os.getenv("OPENAI_API_KEY"))
+
+bot.run()
 
 
-print(type(nature))
-print(type(float))
-print(type(double))
