@@ -29,7 +29,7 @@ class DiscordBot:
             return
         
         if message.content == "!news":
-            await message.channel.send("Sacekaj, prikupljamo podatke...")
+            await message.channel.send("Wait until fetching news is done...")
 
             scraper = NewsScraper("https://www.technewsworld.com/section/it")
             news_data = scraper.scrape()  
