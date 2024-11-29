@@ -21,6 +21,6 @@ class Summarizer:
             return completion.choices[0].message
 
         except Exception as e:   
-            # On Error
+            # error
             print(f"An error occurred: {e}")
             return content
